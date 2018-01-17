@@ -1,0 +1,109 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/pilargomez/.nvm/versions/node/v5.6.0/bin/node',
+1 verbose cli   '/Users/pilargomez/.nvm/versions/node/v5.6.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/pilargomez/Desktop/platzom',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/pilargomez/.npm correctMkdir not in flight; initializing
+10 info lifecycle @pgmadesign/platzom@0.1.0~prepublish: @pgmadesign/platzom@0.1.0
+11 silly lifecycle @pgmadesign/platzom@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package.tgz',
+12 verbose tar pack   '/Users/pilargomez/Desktop/platzom' ]
+13 verbose tarball /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package.tgz
+14 verbose folder /Users/pilargomez/Desktop/platzom
+15 verbose addLocalTarball adding from inside cache /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package.tgz
+16 verbose correctMkdir /Users/pilargomez/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @pgmadesign/platzom@0.1.0
+18 verbose afterAdd /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/pilargomez/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package/package.json written
+21 silly publish { name: '@pgmadesign/platzom',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'Traductor de idioma platzom',
+21 silly publish   main: 'dist/src/platzom.js',
+21 silly publish   scripts: { build: 'babel src/platzom.js -d dist', test: 'mocha' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/pilargmez/platzom.git' },
+21 silly publish   keywords: [ 'platzom', 'platzi', 'fundamentos', 'javascript', 'js' ],
+21 silly publish   author:
+21 silly publish    { name: 'Pilar Gómez',
+21 silly publish      email: 'pgmadesign@gmail.com',
+21 silly publish      url: 'https://twitter.com/App_design_4U' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/pilargmez/platzom/issues' },
+21 silly publish   homepage: 'https://github.com/pilargmez/platzom#readme',
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.26.0',
+21 silly publish      'babel-preset-env': '^1.6.1',
+21 silly publish      chai: '^4.1.2',
+21 silly publish      mocha: '^4.1.0' },
+21 silly publish   readme: '# Platzom\n\nPlatzom es un idioma inventado para el [Curso de Fundamentos de JavaScript](https://platzi.com/js) de [Platzi](https://platzi.com), el mejor lugar de educación online\n\n## Descripción del idioma\n\n- Si la palabra termina con "ar", se le quitan esas dos letras\n- Si la palabra inicia con Z, se le añade "pe" al final\n- Si la palabra traducida tiene 10 o más letras, se debe partir en dos por la mitad y unir con un guión medio\n- Por último, si la palabra original es un palíndromo, ninguna regla anterior cuenta y se devuelve la misma palabra pero intercalando letras mayúsculas y minúsculas\n\n## Instalación\n\n```\nnpm install platzom\n```\n\n## Uso\n\n```\nimport platzom from \'platzom\'\n\nplatzom("Programar") // Program\nplatzom("Zorro") // Zorrope\nplatzom("Zarpar") // Zarppe\nplatzom("abecedario") // abece-dario\nplatzom("sometemos") // SoMeTeMoS\n```\n\n## Créditos\n- [Sacha Lifszyc](https://twitter.com/@slifszyc)\n\n## Licencia\n\n[MIT](https://opensource.org/licenses/MIT)\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'b9a12cd90a6e82aec91fe853a6393764a2fbcd1d',
+21 silly publish   _id: '@pgmadesign/platzom@0.1.0',
+21 silly publish   _shasum: 'abf39b8aeb78468dc4d03a5b8b0c758eb8894c4c',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @pgmadesign/platzom
+24 silly mapToRegistry scope (from package name) @pgmadesign
+25 verbose mapToRegistry no registry URL found in name for scope @pgmadesign
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/@pgmadesign%2fplatzom
+29 verbose publish registryBase https://registry.npmjs.org/
+30 silly publish uploading /Users/pilargomez/.npm/@pgmadesign/platzom/0.1.0/package.tgz
+31 verbose request uri https://registry.npmjs.org/@pgmadesign%2fplatzom
+32 verbose request sending authorization for write operation
+33 info attempt registry request try #1 at 17:30:43
+34 verbose request using bearer token for auth
+35 verbose request id cbd4a1dc6dbb4841
+36 http request PUT https://registry.npmjs.org/@pgmadesign%2fplatzom
+37 http 403 https://registry.npmjs.org/@pgmadesign%2fplatzom
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=0',
+38 verbose headers   'content-length': '91',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   date: 'Wed, 17 Jan 2018 16:30:45 GMT',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   connection: 'close',
+38 verbose headers   'x-served-by': 'cache-hhn1547-HHN',
+38 verbose headers   'x-cache': 'MISS',
+38 verbose headers   'x-cache-hits': '0',
+38 verbose headers   'x-timer': 'S1516206644.103422,VS0,VE1528' }
+39 verbose request invalidating /Users/pilargomez/.npm/registry.npmjs.org/_40pgmadesign_252fplatzom on PUT
+40 error publish Failed PUT 403
+41 verbose stack Error: You cannot publish over the previously published version 0.1.0. : @pgmadesign/platzom
+41 verbose stack     at makeError (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+41 verbose stack     at Request._callback (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/request/request.js:198:22)
+41 verbose stack     at emitTwo (events.js:100:13)
+41 verbose stack     at Request.emit (events.js:185:7)
+41 verbose stack     at Request.<anonymous> (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+41 verbose stack     at emitOne (events.js:95:20)
+41 verbose stack     at Request.emit (events.js:182:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/Users/pilargomez/.nvm/versions/node/v5.6.0/lib/node_modules/npm/node_modules/request/request.js:962:12)
+42 verbose statusCode 403
+43 verbose pkgid @pgmadesign/platzom
+44 verbose cwd /Users/pilargomez/Desktop/platzom
+45 error Darwin 17.2.0
+46 error argv "/Users/pilargomez/.nvm/versions/node/v5.6.0/bin/node" "/Users/pilargomez/.nvm/versions/node/v5.6.0/bin/npm" "publish"
+47 error node v5.6.0
+48 error npm  v3.6.0
+49 error code E403
+50 error You cannot publish over the previously published version 0.1.0. : @pgmadesign/platzom
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
